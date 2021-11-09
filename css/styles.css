@@ -22,13 +22,21 @@
 .link {
   text-decoration: none;
 }
-
+.section-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+}
 /* --------------------------------main selectors------------------------------------- */
 
 body {
-  background-color: #e5e5e5;
+  background-color: var(--main-background-color);
   color: var(--title-color);
   font-family: "Roboto", sans-serif;
+  font-style: normal;
 }
 
 /* --------------------------------header--------------------------------------------- */
@@ -43,8 +51,7 @@ body {
   color: var(--title-color);
 }
 .header-link:hover,
-.header-link:focus,
-.header-link:active {
+.header-link:focus {
   color: var(--main-accent-color);
 }
 .header-contacts-list .link {
@@ -55,13 +62,12 @@ body {
   color: var(--main-text-color);
 }
 .header-contacts-list .link:hover,
-.header-contacts-list .link:focus,
-.header-contacts-list .link:active {
+.header-contacts-list .link:focus {
   color: var(--main-accent-color);
 }
 
 .header-logo {
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
@@ -167,5 +173,57 @@ body {
   color: var(--main-text-color);
 }
 .projects-item {
+  background-color: var(--secondary-background-color);
+}
+/* ------------------------------------------------WEB STUDIO ------------------------------------------- */
+/* ------------------------------------------------HEROE/ BANNER------------------------------------------------ */
+.order-service {
+  background-color: var(--footer-color);
+}
+.order-service-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--main-title-color);
+}
+.order-service-btn {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--main-title-color);
+  background-color: var(--second-button-color);
+}
+.order-service-btn:active,
+.order-service-btn:focus {
+  color: var(--main-title-color);
+}
+/* -----------------------------------------------OUR FEATURES------------------------------------------- */
+.features-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-color);
+}
+.features-text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
+/* ----------------------------------------------OUR TEAM----------------------------------------------- */
+.team {
+  background-color: var(--background-section);
+}
+.team-item {
   background-color: var(--secondary-background-color);
 }
