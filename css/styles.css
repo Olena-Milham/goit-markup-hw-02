@@ -143,6 +143,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--title-color);
   background-color: var(--first-button-color);
+  cursor: pointer;
 }
 .filters-btn:hover,
 .filters-btn:focus,
@@ -199,6 +200,7 @@ body {
   letter-spacing: 0.06em;
   color: var(--main-title-color);
   background-color: var(--second-button-color);
+  cursor: pointer;
 }
 .order-service-btn:active,
 .order-service-btn:focus {
