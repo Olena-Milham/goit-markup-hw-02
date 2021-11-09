@@ -9,6 +9,7 @@
   --footer-color: #2f303a;
   --background-section: #f5f4fa;
   --header-color: #ffffff;
+  --footer-contacts-color: #ffffff 60%;
 }
 
 /*--------------------------service classes-----------------------------*/
@@ -38,6 +39,11 @@ body {
   letter-spacing: 0.02em;
   color: var(--title-color);
 }
+.header-link:hover,
+.header-link:focus,
+.header-link:active {
+  color: var(--main-accent-color);
+}
 .header-contacts-list .link {
   font-weight: 500;
   font-size: 14px;
@@ -51,21 +57,57 @@ body {
   color: var(--main-accent-color);
 }
 
-.header .header-web {
+.header-logo {
   font-family: Raleway;
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  word-spacing: -6px;
+}
+.header-web {
   color: var(--main-accent-color);
 }
-.header .header-studio {
-  font-family: Raleway;
+.header-studio {
+  color: var(--logo-color);
+}
+
+/* ----------------------------------------------------main section----------------------------------------- */
+/* ----------------------------------------------------first section---------------------------------------- */
+/* ----------------------------------------------------footer----------------------------------------------- */
+.footer {
+  background-color: var(--footer-color);
+}
+.footer-address {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+/*------------------------------------------------------ contact links---------------------------------------- */
+
+.footer-address-link {
+  color: var(--header-color);
+}
+.mail,
+.tel {
+  color: var(--footer-contacts-color);
+}
+
+/*--------------------------------------------------------logo-----------------------------------------------*/
+.footer-logo {
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: var(--logo-color);
+  word-spacing: -5px;
+}
+
+.footer-web {
+  color: var(--main-accent-color);
+}
+.footer-studio {
+  color: var(--main-title-color);
 }
