@@ -15,7 +15,7 @@
   --second-button-color: #2196f3;
 }
 
-/*--------------------------service classes--------------------------------------------*/
+/*--------------------------Service Classes--------------------------------------------*/
 .list {
   list-style: none;
 }
@@ -30,7 +30,7 @@
   letter-spacing: 0.03em;
   color: var(--title-color);
 }
-/* --------------------------------main selectors------------------------------------- */
+/* --------------------------------Main Selectors------------------------------------- */
 
 body {
   background-color: var(--main-background-color);
@@ -39,7 +39,7 @@ body {
   font-style: normal;
 }
 
-/* --------------------------------header--------------------------------------------- */
+/* --------------------------------Header--------------------------------------------- */
 .header {
   background-color: var(--header-color);
 }
@@ -82,9 +82,7 @@ body {
   color: var(--logo-color);
 }
 
-/* ----------------------------------------------------main section----------------------------------------- */
-/* ----------------------------------------------------first section---------------------------------------- */
-/* ----------------------------------------------------footer----------------------------------------------- */
+/* ----------------------------------------------------Footer----------------------------------------------- */
 .footer {
   background-color: var(--footer-color);
 }
@@ -109,8 +107,9 @@ body {
 }
 
 /*--------------------------------------add opacity to delute the color to make it softer --------
-  1)color: var(--main-title-colo);
-  opacity: 60%; or 2) add numbers to the color hex name , 60% =99---------------------------------------------*/
+  1)color: var(--main-title-color);
+    opacity: 60%; 
+  2) add numbers to the color hex name , 60% =99 => footer-contacts-color -------------------------------------------*/
 
 /*--------------------------------------------------------logo------------------------------------------------*/
 .footer-logo {
@@ -132,7 +131,7 @@ body {
 }
 /* ------------------------------------------------MAIN SECTION PORTFOLIO---------------------------- */
 
-/* ------------------------------------------------FILTERS-------------------------------------------- */
+/* ------------------------------------------------Filters-------------------------------------------- */
 .filters-btn {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -152,7 +151,7 @@ body {
   background-color: var(--second-button-color);
 }
 
-/* ------------------------------------------------PROJECTS----------------- */
+/* ------------------------------------------------Projects---------------------------------------- */
 .projects {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -167,7 +166,6 @@ body {
 }
 
 .projects-text {
-  font-weight: normal;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
@@ -176,8 +174,8 @@ body {
 .projects-item {
   background-color: var(--secondary-background-color);
 }
-/* ------------------------------------------------WEB STUDIO ------------------------------------------- */
-/* ------------------------------------------------HEROE/ BANNER------------------------------------------------ */
+/* -----------------------------------------------Main WEB STUDIO ------------------------------------------- */
+/* ------------------------------------------------Heroe/ Banner------------------------------------------------ */
 .order-service {
   background-color: var(--footer-color);
 }
@@ -206,7 +204,7 @@ body {
 .order-service-btn:focus {
   color: var(--main-title-color);
 }
-/* -----------------------------------------------OUR FEATURES------------------------------------------- */
+/* -----------------------------------------------Our Features------------------------------------------- */
 .features-title {
   font-weight: bold;
   font-size: 14px;
@@ -216,16 +214,30 @@ body {
   color: var(--title-color);
 }
 .features-text {
-  font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
 }
-/* ----------------------------------------------OUR TEAM----------------------------------------------- */
+/* ----------------------------------------------Our Team----------------------------------------------- */
 .team {
   background-color: var(--background-section);
 }
 .team-item {
   background-color: var(--secondary-background-color);
+}
+.team-person {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+}
+.team-text {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
 }
