@@ -5,14 +5,14 @@
   --main-text-color: #757575;
   --main-accent-color: #2196f3;
   --logo-color: #000000;
+  --footer-contacts-color: #ffffff99;
   --main-background-color: #e5e5e5;
+  --header-color: #ffffff;
   --footer-color: #2f303a;
   --background-section: #f5f4fa;
-  --header-color: #ffffff;
-  --footer-contacts-color: #ffffff 60%;
 }
 
-/*--------------------------service classes-----------------------------*/
+/*--------------------------service classes--------------------------------------------*/
 .list {
   list-style: none;
 }
@@ -80,6 +80,9 @@ body {
   background-color: var(--footer-color);
 }
 .footer-address {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -91,12 +94,14 @@ body {
 }
 .mail,
 .tel {
-  color: var(--main-title-color);
-  /*--------------------------------------add opacity to delute the color to make it softer --------*/
-  opacity: 60%;
+  color: var(--footer-contacts-color);
 }
 
-/*--------------------------------------------------------logo-----------------------------------------------*/
+/*--------------------------------------add opacity to delute the color to make it softer --------
+  1)color: var(--main-title-colo);
+  opacity: 60%; or 2) add numbers to the color hex name , 60% =99---------------------------------------------*/
+
+/*--------------------------------------------------------logo------------------------------------------------*/
 .footer-logo {
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -104,7 +109,7 @@ body {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  /*--------------------------------------------add negative word-spacing to bring letters together-------*/
+  /*--------------------------------------------add negative word-spacing to bring letters together----------*/
   word-spacing: -5px;
 }
 
