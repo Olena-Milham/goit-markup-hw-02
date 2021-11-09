@@ -91,7 +91,9 @@ body {
 }
 .mail,
 .tel {
-  color: var(--footer-contacts-color);
+  color: var(--main-title-color);
+  /*--------------------------------------add opacity to delute the color to make it softer --------*/
+  opacity: 60%;
 }
 
 /*--------------------------------------------------------logo-----------------------------------------------*/
@@ -102,6 +104,7 @@ body {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  /*--------------------------------------------add negative word-spacing to bring letters together-------*/
   word-spacing: -5px;
 }
 
