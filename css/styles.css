@@ -87,30 +87,26 @@ body {
   background-color: var(--footer-color);
 }
 
-/* fonts ?? */
-.footer-address {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-}
 /*------------------------------------------------------ contact links---------------------------------------- */
-
-.footer-address-link {
-  color: var(--header-color);
-}
-.mail,
-.tel {
-  color: var(--footer-contacts-color);
-}
 
 /*--------------------------------------add opacity to delute the color to make it softer --------
   1)color: var(--main-title-color);
     opacity: 60%; 
   2) add numbers to the color hex name , 60% =99 => footer-contacts-color -------------------------------------------*/
 
+.footer-address-link {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--footer-contacts-color);
+}
+.footer-address-link:hover,
+.footer-address-link:focus {
+  color: var(--main-title-color);
+}
 /*--------------------------------------------------------logo------------------------------------------------*/
 .footer-logo {
   font-family: "Raleway", sans-serif;
@@ -151,12 +147,7 @@ body {
   background-color: var(--second-button-color);
 }
 
-/* ------------------------------------------------Projects---------------------------------------- */
-.projects {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-}
-
+/* ------------------------------------------------Portfolio: Projects---------------------------------------- */
 .projects-title {
   font-weight: bold;
   font-size: 18px;
