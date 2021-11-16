@@ -16,13 +16,21 @@
 }
 
 /*--------------------------Service Classes--------------------------------------------*/
+/* NEW Utility !!! should be first/higher in the document  */
 .list {
+  /* ressets all the things given/set by browser */
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 .link {
   text-decoration: none;
 }
 .section-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+  /* ok? */
+
   font-weight: bold;
   font-size: 36px;
   line-height: 1.17;
@@ -30,9 +38,11 @@
   letter-spacing: 0.03em;
   color: var(--title-color);
 }
+
 /* --------------------------------Main Selectors------------------------------------- */
 
 body {
+  /* margin: 0; */
   background-color: var(--secondary-background-color);
   font-family: "Roboto", sans-serif;
   /* font-style: normal; */
@@ -84,6 +94,94 @@ body {
 }
 .header-studio {
   color: var(--logo-color);
+}
+
+/* ---------------------------NEW ------------------*/
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1230px;
+
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 1px solid blue;
+}
+
+/* .container video2 
+39m 
+*/
+
+.header-list {
+  display: flex;
+
+  padding-left: 93px;
+
+  /* там есть какой-то странный отступ не могу понять что это... */
+}
+
+/* .header-item {
+  outline: 1px solid olive;
+  margin-right: 40px;
+}
+очистка крайней геометрии 
+
+.header-item: last child {
+  margin-right: 0;
+} */
+
+.header-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+/* .header-item+header-item{
+  margin-left: 40px;
+} */
+
+/* ссылка - строчный элемент, чтобы работали паддинги, надо сделать ее блочной илистрочно-блочной, но там тогда зазор справа */
+.header-link {
+  /* geometry */
+  display: flex;
+  padding-top: 21px;
+  padding-bottom: 21px;
+
+  /* font + stiles  */
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--title-color);
+
+  /* decore */
+}
+
+/* auth nav ? */
+
+.header-contacts-list {
+  display: flex;
+}
+.header-contacts + .header-contacts {
+  margin-left: 12px;
+}
+
+.header-contacts {
+}
+
+.header-navigation {
+  display: flex;
+
+  margin-right: 0;
+  /* ??? */
+  /* выравниваем относительно поперечной оси, то есть высоты  */
+  align-items: center;
+  /*растягиваем по нужным сторонам 
+  justify-content: ;*/
+}
+
+/* 48 inline-blof - better for buttons as the blok itself is as wide as the page , however link is limited by li */
+
+.order-service-btn {
 }
 
 /* ----------------------------------------------------Footer----------------------------------------------- */
@@ -153,6 +251,8 @@ body {
 
 /* ------------------------------------------------Portfolio: Projects---------------------------------------- */
 .projects-title {
+  margin-top: 20px;
+  margin-bottom: 4px;
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
@@ -161,6 +261,9 @@ body {
 }
 
 .projects-text {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 20px;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
@@ -170,11 +273,16 @@ body {
   background-color: var(--secondary-background-color);
 }
 /* -----------------------------------------------Main WEB STUDIO ------------------------------------------- */
-/* ------------------------------------------------Heroe/ Banner------------------------------------------------ */
+/* -----------------------------Heroe/ Banner/ order a service ------------------------------------------------ */
+
 .order-service {
   background-color: var(--footer-color);
+  text-align: center;
 }
 .order-service-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -200,21 +308,47 @@ body {
   color: var(--main-title-color);
 }
 /* -----------------------------------------------Our Features------------------------------------------- */
+.features-title {
+  margin-bottom: 50px;
+}
 .features-item-title {
+  margin-top: 10px;
+  margin-bottom: 10px;
   font-weight: bold;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--title-color);
 }
 
+.features-text {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.features-list {
+  margin-top: 94px;
+  /* ? */
+}
+
+/* -------------------------------------specialities----------- */
+.specialities-title
 /* ----------------------------------------------Our Team----------------------------------------------- */
 .team {
+  /* padding-top: 186px;
+  padding-right: 215px;
+  padding-bottom: 94px;
+  padding-left: 215px; */
+
   background-color: var(--background-section);
 }
+
 .team-item {
   background-color: var(--secondary-background-color);
 }
 .team-person {
+  margin-top: 30px;
+  margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -223,6 +357,10 @@ body {
   color: var(--title-color);
 }
 .team-text {
+  margin-top: 0;
+  margin-bottom: 0px;
+  padding-bottom: 30px;
+
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
